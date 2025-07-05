@@ -9,7 +9,10 @@
 		"preinstall": "npx only-allow bun",
 		"build": "tsc",
 		"watch": "tsc -w",
-		"test": "jest",
+		"test": "vitest run",
+		"test:watch": "vitest",
+		"test:ui": "vitest --ui",
+		"test:coverage": "vitest --coverage",
 		"cdk": "cdk",
 		"format": "bunx --bun biome format --write .",
 		"lint": "bunx --bun biome lint .",
@@ -18,14 +21,13 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "2.0.6",
-		"@types/jest": "^29.5.14",
 		"@types/node": "22.7.9",
+		"@vitest/ui": "^3.2.4",
 		"aws-cdk": "2.1020.2",
-		"jest": "^29.7.0",
 		"lefthook": "^1.11.16",
-		"ts-jest": "^29.2.5",
 		"ts-node": "^10.9.2",
-		"typescript": "~5.6.3"
+		"typescript": "~5.6.3",
+		"vitest": "^3.2.4"
 	},
 	"dependencies": {
 		"aws-cdk-lib": "2.202.0",
