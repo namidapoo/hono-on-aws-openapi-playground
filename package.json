@@ -5,6 +5,7 @@
     "hono-on-aws-openapi-playground": "bin/hono-on-aws-openapi-playground.js"
   },
   "scripts": {
+    "preinstall": "npx only-allow bun",
     "build": "tsc",
     "watch": "tsc -w",
     "test": "jest",
